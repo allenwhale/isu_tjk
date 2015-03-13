@@ -5,6 +5,7 @@ from req import reqenv
 from req import RequestHandler
 from home import HomeHandler
 from welcome import WelcomeHandler
+from committees import CommitteesHandler
 
 import pg
 
@@ -21,6 +22,7 @@ if __name__ == '__main__':
         ('/', IndexHandler),
         ('/home', HomeHandler),
         ('/welcome', WelcomeHandler),
+        ('/committees', CommitteesHandler),
         ('/(.*)', tornado.web.StaticFileHandler, {'path':'../html/'}),
         ],cookie_secret = 'cookie',autoescape = 'xhtml_escape')
     app.listen(888)
