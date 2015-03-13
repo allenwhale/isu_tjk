@@ -1,10 +1,10 @@
 from req import RequestHandler
 from req import reqenv
 
-class HomeHandler(RequestHandler):
+class WelcomeHandler(RequestHandler):
     @reqenv
     def get(self):
-        self.render('../html/home.html')
+        self.render('../html/welcome.html')
         pass
     @reqenv
     def post(self):
