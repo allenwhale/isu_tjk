@@ -5,7 +5,7 @@ class HomeHandler(RequestHandler):
     @reqenv
     def get(self):
         self.render('../html/home.html')
-        pass
+        return
     @reqenv
     def post(self):
         pass
