@@ -1,0 +1,203 @@
+<head>
+<style>
+* {
+	margin: 0;
+}
+html, body {
+	background-color: #D8D8EB;
+	height: 100%;
+}
+#wrapper {
+	min-height: 100%;
+}
+#wrapper:after {
+	content: "";
+	display: block;
+}
+</style>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="semantic.min.js"></script>
+<script src="menu.js"></script>
+<script>
+window.less = {
+async        : true,
+			   environment  : 'production',
+			   fileAsync    : false,
+			   onReady      : false,
+			   useFileCache : true
+};
+</script>
+<script src="less.min.js"></script>
+<script src="easing.min.js"></script>
+<script src="highlight.min.js"></script>
+<script src="highlight.languages.min.js"></script>
+<script src="history.min.js"></script>
+<script src="tablesort.min.js"></script>
+<link rel="stylesheet" href="semantic.min.css" />
+<link rel="stylesheet" href="menu.css" />
+<style title="sidebar"> .ui.visible.left.sidebar ~ .fixed, .ui.visible.left.sidebar ~ .pusher {   -webkit-transform: translate3d(260px, 0, 0);           transform: translate3d(260px, 0, 0); }</style>
+{% block head %}
+{% end %}
+</head>
+<body id="example" class="progress pushable" ontouchstart>
+<div id="wrapper">
+<div class="ui vertical inverted sidebar menu left" id="toc">
+	<div class="item">
+		<a href="/"><b>TJK</b></a>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">
+			<b>Home</b>
+		</a>
+		<div class="menu">
+			<a class="item" href="#">Overview</a>
+			<a class="item" href="#">Important dates</a>
+			<a class="item" href="#">Contact us</a>
+		</div>
+	</div>
+	<a class="item" href="#">
+		<i class="mail outline icon"></i> <b>Welcome</b>
+	</a>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">
+			Committees
+		</a>
+		<div class="menu">
+			<a class="item" href="#">Organizing Committee</a>
+			<a class="item" href="#">Regional Delegates</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">Call for Paper</a>
+		<div class="menu">
+			<a class="item" href="#">
+				Call for papers
+			</a>
+			<a class="item" href="#">
+				Call for papers (pdf)
+			</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">Program</a>
+		<div class="menu">
+			<a class="item" href="#">
+				Conference program
+			</a>
+			<a class="item" href="#">
+				Poster presentation guide
+			</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">Important Dates</a>
+		<div class="menu">
+			<a class="item" href="#">
+				Paper submission deadline
+			</a>
+			<a class="item" href="#">
+				Early registration
+			</a>
+			<a class="item" href="#">
+				Conference dates
+			</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small active  inverted header" href="#">Venue</a>
+		<div class="menu">
+			<a class="item" href="#">
+				Conference site
+			</a>
+			<a class="item" href="#">
+				How do I go to Crown Plaza after arriving Taiwan?
+			</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">Registration & Hotel Reservation</a>
+		<div class="menu">
+			<a class="item" href="#">
+				Registration Fee
+			</a>
+			<a class="item" href="#">
+				Registration Form
+			</a>
+			<a class="item" href="#">
+				Accommodation (Hotel Reservation)
+			</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">Paper submission</a>
+		<div class="menu">
+			<a class="item" href="#">
+				Guidelines for Paper Submission
+			</a>
+			<a class="item" href="#">
+				Paper Submission System
+			</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">Sponsors Coordinating Organizations</a>
+		<div class="menu">
+			<a class="item" href="#">
+				Sponsors Coordinating Organizations
+			</a>
+		</div>
+	</div>
+	<div class="item">
+		<a class="ui small  inverted header" href="#">Links and Interesting Spots</a>
+		<div class="menu">
+			<a class="item" href="#">
+				ISU
+			</a>
+			<a class="item" href="#">
+				E-DA Theme Park
+			</a>
+			<a class="item" href="#">
+				E-DA World
+			</a>
+		</div>
+	</div>
+</div>
+<div class="ui black big launch right attached fixed button">
+	<i class="content icon"></i>
+	<span class="text">Menu</span>
+</div>
+<div class=" pusher ui grid centered pusher" style="margin-top: 75px; margin-left: 75px;">
+{% block content %}
+{% end %}
+	<div class="fourteen wide column">
+		<div class="ui segment">
+			<div class="tab demo">
+				<div class="ui secondary menu">
+					<a data-tab="first" class="item">First</a>
+					<a data-tab="second" class="item">Second</a>
+					<a data-tab="third" class="item">Third</a>
+				</div>
+				<div data-tab="first" class="ui tab segment">
+					First tab
+				</div>
+				<div data-tab="second" class="ui tab segment">
+					Second tab
+				</div>
+				<div data-tab="third" class="ui tab segment">
+					Third tab
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.tab.demo .menu .item').tab({
+				history: true,
+				context: $('.tab.demo')
+			});
+		});
+	</script>
+</div>
+</div>
+</body>
