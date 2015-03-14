@@ -7,6 +7,7 @@ from home import HomeHandler
 from welcome import WelcomeHandler
 from committees import CommitteesHandler
 from program import ProgramHandler
+from callforpaper import CallforpaperHandler
 
 import pg
 
@@ -25,6 +26,7 @@ if __name__ == '__main__':
         ('/welcome', WelcomeHandler),
         ('/committees', CommitteesHandler),
         ('/program', ProgramHandler),
+        ('/callforpaper', CallforpaperHandler),
         ('/(.*)', tornado.web.StaticFileHandler, {'path':'../html/'}),
         ],cookie_secret = 'cookie',autoescape = 'xhtml_escape')
     app.listen(888)
