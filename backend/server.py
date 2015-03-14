@@ -10,6 +10,7 @@ from program import ProgramHandler
 from callforpaper import CallforpaperHandler
 from importantdates import ImportantdatesHandler
 from venue import VenueHandler
+from registration import RegistrationHandler
 
 import pg
 
@@ -31,6 +32,7 @@ if __name__ == '__main__':
         ('/callforpaper', CallforpaperHandler),
         ('/importantdates', ImportantdatesHandler),
         ('/venue', VenueHandler),
+        ('/registration', RegistrationHandler),
         ('/(.*)', tornado.web.StaticFileHandler, {'path':'../html/'}),
         ],cookie_secret = 'cookie',autoescape = 'xhtml_escape')
     app.listen(888)
