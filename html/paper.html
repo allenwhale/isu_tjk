@@ -1,0 +1,32 @@
+{% extends '../html/index.html' %}
+{% block head%}
+{% end %}
+{% block content %}
+
+<div class="fourteen wide column">
+    <div class="ui segment">
+        <h1 class="ui header">Paper submission</h1>
+        <div class="tab demo">
+            <div class="ui secondary menu">
+                <a data-tab="first" class="item">Guidelines for Paper Submission</a>
+                <a data-tab="second" class="item">Paper Submission System</a>
+            </div>
+            <div data-tab="first" class="ui tab segment">
+                Guidelines for Paper Submission
+            </div>
+            <div data-tab="second" class="ui tab segment">
+                Paper Submission System
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+        $('.tab.demo .menu .item').tab({
+history: true,
+context: $('.tab.demo')
+});
+        });
+</script>
+{% end %}
