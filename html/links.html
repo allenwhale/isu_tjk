@@ -1,0 +1,36 @@
+{% extends '../html/index.html' %}
+{% block head%}
+{% end %}
+{% block content %}
+
+<div class="fourteen wide column">
+    <div class="ui segment">
+        <h1 class="ui header">Links and Interesting Spots</h1>
+        <div class="tab demo">
+            <div class="ui secondary menu">
+                <a data-tab="first" class="item">ISU</a>
+                <a data-tab="second" class="item">E-DA Theme Park</a>
+                <a data-tab="third" class="item">E-DA World</a>
+            </div>
+            <div data-tab="first" class="ui tab segment">
+                ISU
+            </div>
+            <div data-tab="second" class="ui tab segment">
+                E-DA Theme Park
+            </div>
+            <div data-tab="third" class="ui tab segment">
+                E-DA World
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+        $('.tab.demo .menu .item').tab({
+history: true,
+context: $('.tab.demo')
+});
+        });
+</script>
+{% end %}
