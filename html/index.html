@@ -17,6 +17,7 @@ html, body {
 }
 </style>
 <script src="jquery-2.1.1.min.js"></script>
+<script src="/jquery.flexslider-min.js"></script>
 <script src="semantic.min.js"></script>
 <script src="menu.js"></script>
 <script>
@@ -28,14 +29,22 @@ async        : true,
 			   useFileCache : true
 };
 </script>
-<script src="less.min.js"></script>
-<script src="easing.min.js"></script>
-<script src="highlight.min.js"></script>
-<script src="highlight.languages.min.js"></script>
-<script src="history.min.js"></script>
-<script src="tablesort.min.js"></script>
-<link rel="stylesheet" href="semantic.min.css" />
-<link rel="stylesheet" href="menu.css" />
+<script>
+$(document).ready(function(){
+	$('.flexslider').flexslider({
+		animation: "slide"
+	});
+});
+</script>
+<script src="/less.min.js"></script>
+<script src="/easing.min.js"></script>
+<script src="/highlight.min.js"></script>
+<script src="/highlight.languages.min.js"></script>
+<script src="/history.min.js"></script>
+<script src="/tablesort.min.js"></script>
+<link rel="stylesheet" href="/semantic.min.css" />
+<link rel="stylesheet" href="/flexslider.css" />
+<link rel="stylesheet" href="/menu.css" />
 <style title="sidebar"> .ui.visible.left.sidebar ~ .fixed, .ui.visible.left.sidebar ~ .pusher {   -webkit-transform: translate3d(260px, 0, 0);           transform: translate3d(260px, 0, 0); }</style>
 {% block head %}
 {% end %}
@@ -167,7 +176,24 @@ async        : true,
 	<i class="content icon"></i>
 	<span class="text">Menu</span>
 </div>
-<div class=" pusher ui grid centered pusher" style="margin-top: 75px; margin-left: 75px;">
+<div class=" pusher ui grid centered" style="margin-top: 75px; margin-left: 75px;">
+<div class="fourteen wide column">
+    <div class="ui segment">
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+			<img src="SC01-020.jpg" />
+			</li>
+			<li>
+			<img src="SC01-053.jpg" />
+			</li>
+			<li>
+			<img src="Sc07-195.jpg" />
+			</li>
+		</ul>
+	</div>
+	</div>
+	</div>
 {% block content %}
 {% end %}
 </div>
