@@ -27,7 +27,7 @@ class IndexHandler(RequestHandler):
 if __name__ == '__main__':
     #db = pg.AsyncPG('web','admin','adminpassword',dbtz='+8')
     app = tornado.web.Application([
-        ('/', IndexHandler),
+        ('/', HomeHandler),
         ('/home', HomeHandler),
         ('/welcome', WelcomeHandler),
         ('/committees', CommitteesHandler),
