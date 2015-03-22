@@ -417,7 +417,7 @@ body#example {
 }
 #example .fixed.launch.button {
   position: fixed;
-  top: 63px;
+  top: 150px;
   left: -1px;
 
   width: 55px;
