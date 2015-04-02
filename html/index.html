@@ -5,7 +5,7 @@
 //    font-size: 120%;
 }
 html, body {
-	background-color: #D8D8EB;
+	/*background-color: #D8D8EB;*/
 	height: 100%;
 }
 #wrapper {
@@ -18,8 +18,8 @@ html, body {
 </style>
 <script src="jquery-2.1.1.min.js"></script>
 <script src="/jquery.flexslider-min.js"></script>
-<script src="semantic.min.js"></script>
-<script src="menu.js"></script>
+<script src="/semantic.min.js"></script>
+<script src="/menu.js"></script>
 <script>
 window.less = {
 async        : true,
@@ -34,6 +34,7 @@ $(document).ready(function(){
 	$('.flexslider').flexslider({
 		animation: "slide"
 	});
+	$('.dropdown').dropdown(function(){});
 });
 </script>
 <script src="/less.min.js"></script>
@@ -50,8 +51,8 @@ $(document).ready(function(){
 {% end %}
 </head>
 <body id="example" class="progress pushable" ontouchstart>
-<div id="wrapper">
-<div class="ui vertical inverted sidebar menu left" id="toc" style="font-size: 115%;">
+<div id="wrapper" style=" background: #FFFFFF">
+	<!--div class="ui vertical inverted sidebar menu left" id="toc" style="font-size: 115%;">
 	<div class="item">
 		<a href="/"><b>TJK</b></a>
 	</div>
@@ -171,76 +172,104 @@ $(document).ready(function(){
 			</a>
 		</div>
 	</div>
-</div>
-<div class="ui black big launch right attached fixed button">
+</div-->
+	<!--div class="ui black big launch right attached fixed button">
 	<i class="content icon"></i>
 	<span class="text">Menu</span>
-</div>
-<div class="ui fixed inverted main menu blue">
-	<center>
-		<h1 class="ui" style="margin-bottom:-20px;">2015 Joint of Taiwan/Korea/Japan Chemical Engineering Conference</h1>
-		<h3 class="ui">6-8 November  2015 Kaohsiung, Taiwan</h3>
-	</center>
-	<div class="container">
-		<a class="launch item">
-			<i class="content icon"></i>
-			Menu
+</div-->
+	<div class="ui fixed inverted main menu blue">
+		<center>
+			<h1 class="ui" style="margin-bottom:-20px;">2015 Joint of Taiwan/Korea/Japan Chemical Engineering Conference</h1>
+			<h3 class="ui">6-8 November  2015 Kaohsiung, Taiwan</h3>
+		</center>
+		<a class="item" href="/home">
+			Home
+		</a>
+		<a class="item" href="/welcome">
+			Welcome
+		</a>
+		<a class="item" href="/committees">
+			Committees
+		</a>
+		<a class="item" href="/callforpaper" >
+			Call for Paper
+		</a>
+		<a class="item" href="/program">
+			Program
+		</a>
+		<a class="item" href="/importantdates">
+			Important Dates
+		</a>
+		<a class="item" href="/venue">
+			Venue
+		</a>
+		<a class="item" href="/registration">
+			Registration & Hotel Reservation
+		</a>
+		<a class="item" href="/paper">
+			Paper Submission
+		</a>
+		<a class="item" href="/sponsors">
+			Sponsors Coordinating Organizations
+		</a>
+		<a class="item" href="/links">
+			Links and Interesting Spots
 		</a>
 	</div>
-	<a class="item">
-		Home
-	</a>
-	<a class="item">
-		Welcome
-	</a>
-	<a class="item">
-		Committees
-	</a>
-	<a class="item">
-		Call for Paper
-	</a>
-	<a class="item">
-		Program
-	</a>
-	<a class="item">
-		Important Dates
-	</a>
-	<a class="item">
-		Venue
-	</a>
-	<a class="item">
-		Registration & Hotel Reservation
-	</a>
-	<a class="item">
-		Paper Submission
-	</a>
-	<a class="item">
-		Sponsors Coordinating Organizations
-	</a>
-	<a class="item">
-		Links and Interesting Spots
-	</a>
-</div>
-<div class=" pusher ui grid centered" style="margin-top: 90px; margin-left: 75px;">
-	<div class="fourteen wide column">
-		<div class="ui segment">
-			<div class="flexslider">
-				<ul class="slides">
-					<li>
-					<img src="SC01-020.jpg" />
-					</li>
-					<li>
-					<img src="SC01-053.jpg" />
-					</li>
-					<li>
-					<img src="Sc07-195.jpg" />
-					</li>
-				</ul>
+	<div class="ui grid centered" style="margin-top: 90px;">
+		<div class="two wide column" style="">
+			<div class="ui vertical menu" style=" background: #00FEFF">
+				<div class="ui left pointing dropdown link item">
+					<i class="dropdown icon"></i>
+					For speakers <br>Submit abstract here >
+					<div class="menu">
+						<a class="item" href="/callforpaper">Call for Paper</a>
+						<a class="item" href="/paper">Paper Submission</a>
+					</div>
+				</div>
+			</div>
+			<div class="ui vertical menu" style=" background: #00FEFF">
+				<a class="item" href="/registration">
+					For attendees<br>Registration here
+
+				</a>
+			</div>
+			<div class="ui vertical menu" style=" background: #00FEFF">
+				<a class="item" href="#">
+					Conference brochure
+				</a>
+			</div>
+			<img src="/logo1.gif" style="width:100%">
+			<img src="/logo2.png" style="width:100%">
+			<img src="/logo3.jpg" style="width:100%">
+		</div>
+		<div class="twelve wide column">
+			<div class="ui segment">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+						<img src="SC01-020.jpg" />
+						</li>
+						<li>
+						<img src="SC01-053.jpg" />
+						</li>
+						<li>
+						<img src="Sc07-195.jpg" />
+						</li>
+					</ul>
+				</div>
+		{% block content %}
+		{% end %}
 			</div>
 		</div>
+		<div class="two wide column">
+			<a href="/registration#/third">
+				<img src="/side-img-1.jpg" style="width:100%;margin-bottom: 8px;">
+			</a>
+			<a href="/links">
+				<img src="/side-img-2.jpg" style="width:100%">
+			</a>
+		</div>
 	</div>
-	{% block content %}
-	{% end %}
-</div>
 </div>
 </body>
