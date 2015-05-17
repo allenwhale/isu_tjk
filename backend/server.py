@@ -14,6 +14,7 @@ from registration import RegistrationHandler
 from paper import PaperHandler
 from sponsors import SponsorsHandler
 from links import LinksHandler
+from about import AboutHandler
 
 import pg
 
@@ -39,6 +40,7 @@ if __name__ == '__main__':
         ('/paper', PaperHandler),
         ('/sponsors', SponsorsHandler),
         ('/links', LinksHandler),
+        ('/about', AboutHandler),
         ('/(.*)', tornado.web.StaticFileHandler, {'path':'../html/'}),
         ],cookie_secret = 'cookie',autoescape = 'xhtml_escape')
     app.listen(888)
