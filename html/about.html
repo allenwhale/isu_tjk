@@ -2,17 +2,31 @@
 {% block head%}
 {% end %}
 {% block content %}
-<h2>Origins</h2>
-<p>
-In 1994, a group of around 40 members of Japan’s Society of Chemical Engineers (Kyushu branch) visited the Taiwanese Institute of Chemical Engineers (TICE). Dr. Wei-Ming Liu, professor of Chemical Engineering at National Taiwan University, represented the TICE to welcome the visitors and host the first Joint Symposium on Chemical Technology. Symposium topics covered a range of topics including the basic education of chemical engineers, polymer materials and chemistry, and reaction engineering. More than 100 Taiwanese chemical engineering professionals attended this event which marked the first academic exchange of chemical engineering experts between the two countries. Hereafter, both associations decided to periodically hold joint academic and industrial chemical engineering symposiums to create new opportunities for academic exchange and forge closer bonds between the associations. In 1997, the second meeting took place in Kagoshima, drawing about 250 Taiwanese and 120 Japanese attendees. The Busan, South Korea branch was invited to join the fourth symposium, launching the first trilateral meeting, with subsequent meetings held biennially on a rotating basis among the three countries. The 2015 Taiwan/Korea/Japan (TKJ) Joint Meeting on Chemical Engineering will be organized by the Department of Chemical Engineers at I-Shou University in Taiwan.  
-</p>
-<h2>Origins</h2>
-<p>
-Taiwan hosted the Taiwan/Korea/Japan (TKJ) Joint Meeting on Chemical Engineering in 2002 and 2008. The 2015 TKJ meeting will provide a platform for researchers, engineers, academics and industrial professionals to meet and share cutting-edge development in various fields. 
-</p>
-<h2>Prospective Benefits</h2>
-<p>
-n the 21st century, the field of chemical engineering covers not only the traditional petrochemical industry, but also bio-chemical technologies, the optoelectronic semiconductor industry, sustainable energy, green engineering, nanotechnology, specialty chemicals, and other high-tech industries. These high-tech industries play a significant role in national economic development and are tightly integrated into everyday life. This biennial meeting allows international researchers, engineers, academics and industry professionals to share the results of cutting-edge research, jointly develop new research directions, and foster new ideas and relationships. This symposium provides an opportunity to enhance the body of knowledge in chemical engineering, support continued education the field, and introduce chemical engineering technologies and concepts to practitioners in other fields. <strong>The 2015 Taiwan/Korea/Japan (TKJ) Joint Meeting on Chemical Engineering</strong> promotes industrial upgrading and boosts the competitiveness of the participating countries. In addition to chemical engineering experts from Japan, South Korea, and Taiwan, the conference also welcomes students, researchers, and others to share their work and experience. In addition, graduate students are given the opportunity to enhance their English-language presentation skills, expand their global perspective, and strengthen their involvement and competitiveness in international meetings.  
-</p>
-
+<script type="text/javascript">
+$(document).ready(function(){
+        $('.tab.demo .menu .item').tab({
+history: true,
+context: $('.tab.demo')
+});
+        });
+</script>
+<div class="ui segment">
+    <h1 class="ui header">About</h1>
+    <div class="tab demo">
+        <div class="ui secondary menu ">
+            <a data-tab="first" class="item">About TKJ Meeting</a>
+            <a data-tab="second" class="item">Welcome</a>
+            <a data-tab="third" class="item">Organizing Committees</a>
+        </div>
+        <div data-tab="first" class="ui tab segment ">
+            <img src="/about_tkj_meeting.jpg" style="max-width: 100%;">
+        </div>
+        <div data-tab="second" class="ui tab segment ">
+            To be announced
+        </div>
+        <div data-tab="third" class="ui tab segment ">
+            <img src="/committees.jpg" style="max-width: 100%;">
+        </div>
+    </div>
+</div>
 {% end %}

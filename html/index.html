@@ -1,19 +1,19 @@
 <head>
 <style>
 * {
-	margin: 0;
-//    font-size: 120%;
+    margin: 0;
+    //    font-size: 120%;
 }
 html, body {
-	/*background-color: #D8D8EB;*/
-	height: 100%;
+    /*background-color: #D8D8EB;*/
+    height: 100%;
 }
 #wrapper {
-	min-height: 100%;
+    min-height: 100%;
 }
 #wrapper:after {
-	content: "";
-	display: block;
+    content: "";
+    display: block;
 }
 </style>
 <script src="jquery-2.1.1.min.js"></script>
@@ -23,19 +23,19 @@ html, body {
 <script>
 window.less = {
 async        : true,
-			   environment  : 'production',
-			   fileAsync    : false,
-			   onReady      : false,
-			   useFileCache : true
+               environment  : 'production',
+               fileAsync    : false,
+               onReady      : false,
+               useFileCache : true
 };
 </script>
 <script>
 $(document).ready(function(){
-	$('.flexslider').flexslider({
-		animation: "slide"
-	});
-	$('.dropdown').dropdown(function(){});
+        $('.flexslider').flexslider({
+animation: "slide"
 });
+        $('.dropdown').dropdown(function(){});
+        });
 </script>
 <script src="/less.min.js"></script>
 <script src="/easing.min.js"></script>
@@ -50,228 +50,214 @@ $(document).ready(function(){
 {% block head %}
 {% end %}
 </head>
-<body id="example" class="progress pushable" ontouchstart>
-<div id="wrapper" style=" background: #FFFFFF">
-	<!--div class="ui vertical inverted sidebar menu left" id="toc" style="font-size: 115%;">
-	<div class="item">
-		<a href="/"><b>TJK</b></a>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/home">
-			<b>Home</b>
-		</a>
-		<div class="menu">
-			<a class="item" href="/home#/first">Overview</a>
-			<a class="item" href="/home#/second">Important dates</a>
-			<a class="item" href="/home#/third">Contact us</a>
-		</div>
-	</div>
-	<a class="item" href="/welcome">
-		<i class="mail outline icon"></i> <b>Welcome</b>
-	</a>
-	<div class="item">
-		<a class="ui small  inverted header" href="/committees">
-			Committees
-		</a>
-		<div class="menu">
-			<a class="item" href="/committees#/first">Organizing Committee</a>
-			<a class="item" href="/committees#/second">Regional Delegates</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/callforpaper">Call for Paper</a>
-		<div class="menu">
-			<a class="item" href="/callforpaper#/first">
-				Call for papers
-			</a>
-			<a class="item" href="/callforpaper#/second">
-				Call for papers (pdf)
-			</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/program">Program</a>
-		<div class="menu">
-			<a class="item" href="/program#/first">
-				Conference program
-			</a>
-			<a class="item" href="/program#/second">
-				Poster presentation guide
-			</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/importantdates">Important Dates</a>
-		<div class="menu">
-			<a class="item" href="/importantdates#/first">
-				Paper submission deadline
-			</a>
-			<a class="item" href="/importantdates#/second">
-				Early registration
-			</a>
-			<a class="item" href="/importantdates#/third">
-				Conference dates
-			</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small active  inverted header" href="/venue">Venue</a>
-		<div class="menu">
-			<a class="item" href="/venue#/first">
-				Conference site
-			</a>
-			<a class="item" href="/venue#/second">
-				How do I go to Crown Plaza after arriving Taiwan?
-			</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/registration">Registration & Hotel Reservation</a>
-		<div class="menu">
-			<a class="item" href="/registration#/first">
-				Registration Fee
-			</a>
-			<a class="item" href="/registration#/second">
-				Registration Form
-			</a>
-			<a class="item" href="/registration#/third">
-				Accommodation (Hotel Reservation)
-			</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/paper">Paper submission</a>
-		<div class="menu">
-			<a class="item" href="/paper#/first">
-				Guidelines for Paper Submission
-			</a>
-			<a class="item" href="/paper#/second">
-				Paper Submission System
-			</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/sponsors">Sponsors Coordinating Organizations</a>
-		<div class="menu">
-			<a class="item" href="/sponsors#/first">
-				Sponsors Coordinating Organizations
-			</a>
-		</div>
-	</div>
-	<div class="item">
-		<a class="ui small  inverted header" href="/links">Links and Interesting Spots</a>
-		<div class="menu">
-			<a class="item" href="/links#/first">
-				ISU
-			</a>
-			<a class="item" href="/links#/second">
-				E-DA Theme Park
-			</a>
-			<a class="item" href="/links#/first">
-				E-DA World
-			</a>
-		</div>
-	</div>
+<body id="example" class="">
+<div id="wrapper" style="background: -webkit-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);">
+    <!--div class="ui vertical inverted sidebar menu left" id="toc" style="font-size: 115%;">
+    <div class="item">
+        <a href="/"><b>TJK</b></a>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/home">
+            <b>Home</b>
+        </a>
+        <div class="menu">
+            <a class="item" href="/home#/first">Overview</a>
+            <a class="item" href="/home#/second">Important dates</a>
+            <a class="item" href="/home#/third">Contact us</a>
+        </div>
+    </div>
+    <a class="item" href="/welcome">
+        <i class="mail outline icon"></i> <b>Welcome</b>
+    </a>
+    <div class="item">
+        <a class="ui small  inverted header" href="/committees">
+            Committees
+        </a>
+        <div class="menu">
+            <a class="item" href="/committees#/first">Organizing Committee</a>
+            <a class="item" href="/committees#/second">Regional Delegates</a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/callforpaper">Call for Paper</a>
+        <div class="menu">
+            <a class="item" href="/callforpaper#/first">
+                Call for papers
+            </a>
+            <a class="item" href="/callforpaper#/second">
+                Call for papers (pdf)
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/program">Program</a>
+        <div class="menu">
+            <a class="item" href="/program#/first">
+                Conference program
+            </a>
+            <a class="item" href="/program#/second">
+                Poster presentation guide
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/importantdates">Important Dates</a>
+        <div class="menu">
+            <a class="item" href="/importantdates#/first">
+                Paper submission deadline
+            </a>
+            <a class="item" href="/importantdates#/second">
+                Early registration
+            </a>
+            <a class="item" href="/importantdates#/third">
+                Conference dates
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small active  inverted header" href="/venue">Venue</a>
+        <div class="menu">
+            <a class="item" href="/venue#/first">
+                Conference site
+            </a>
+            <a class="item" href="/venue#/second">
+                How do I go to Crown Plaza after arriving Taiwan?
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/registration">Registration & Hotel Reservation</a>
+        <div class="menu">
+            <a class="item" href="/registration#/first">
+                Registration Fee
+            </a>
+            <a class="item" href="/registration#/second">
+                Registration Form
+            </a>
+            <a class="item" href="/registration#/third">
+                Accommodation (Hotel Reservation)
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/paper">Paper submission</a>
+        <div class="menu">
+            <a class="item" href="/paper#/first">
+                Guidelines for Paper Submission
+            </a>
+            <a class="item" href="/paper#/second">
+                Paper Submission System
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/sponsors">Sponsors Coordinating Organizations</a>
+        <div class="menu">
+            <a class="item" href="/sponsors#/first">
+                Sponsors Coordinating Organizations
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="ui small  inverted header" href="/links">Links and Interesting Spots</a>
+        <div class="menu">
+            <a class="item" href="/links#/first">
+                ISU
+            </a>
+            <a class="item" href="/links#/second">
+                E-DA Theme Park
+            </a>
+            <a class="item" href="/links#/first">
+                E-DA World
+            </a>
+        </div>
+    </div>
 </div-->
-	<!--div class="ui black big launch right attached fixed button">
-	<i class="content icon"></i>
-	<span class="text">Menu</span>
+    <!--div class="ui black big launch right attached fixed button">
+    <i class="content icon"></i>
+    <span class="text">Menu</span>
 </div-->
-	<div class="ui fixed inverted main menu blue">
-		<center>
-            <!--img src="/banner-en.jpg" style="max-width: 100%; max-height: 100px;"/-->
-		</center>
-		<a class="item" href="/home">
-			Home
-		</a>
-		<a class="item" href="/about">
-            About TKJ Meeting
-		</a>
-		<a class="item" href="/welcome">
-			Welcome
-		</a>
-		<a class="item" href="/committees">
-			Committees
-		</a>
-		<a class="item" href="/callforpaper" >
-			Call for Paper
-		</a>
-		<a class="item" href="/program">
-			Program
-		</a>
-		<a class="item" href="/importantdates">
-			Important Dates
-		</a>
-		<a class="item" href="/venue">
-			Venue
-		</a>
-		<a class="item" href="/registration">
-			Registration & Hotel Reservation
-		</a>
-		<a class="item" href="/paper">
-			Paper Submission
-		</a>
-		<a class="item" href="/sponsors">
-			Sponsors Coordinating Organizations
-		</a>
-		<a class="item" href="/links">
-			Links and Interesting Spots
-		</a>
-	</div>
-	<div class="ui grid centered" style="margin-top: 50px;">
-		<div class="two wide column" style="">
-			<div class="ui vertical menu" style=" background: #00FEFF">
-				<div class="ui left pointing dropdown link item">
-					<i class="dropdown icon"></i>
-					For speakers <br>Submit abstract here >
-					<div class="menu">
-						<a class="item" href="/callforpaper">Call for Paper</a>
-						<a class="item" href="/paper">Paper Submission</a>
-					</div>
-				</div>
-			</div>
-			<div class="ui vertical menu" style=" background: #00FEFF">
-				<a class="item" href="/registration">
-					For attendees<br>Registration here
-
-				</a>
-			</div>
-			<div class="ui vertical menu" style=" background: #00FEFF">
-				<a class="item" href="#">
-					Conference brochure
-				</a>
-			</div>
-			<img src="/logo1.gif" style="width:100%">
-			<img src="/logo2.png" style="width:100%">
-			<img src="/logo3.jpg" style="width:100%">
-		</div>
-		<div class="twelve wide column">
-			<div class="ui segment">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-						<img src="SC01-020.jpg" />
-						</li>
-						<li>
-						<img src="SC01-053.jpg" />
-						</li>
-						<li>
-						<img src="Sc07-195.jpg" />
-						</li>
-					</ul>
-				</div>
-		{% block content %}
-		{% end %}
-			</div>
-		</div>
-		<div class="two wide column">
-			<a href="/registration#/third">
-				<img src="/side-img-1.jpg" style="width:100%;margin-bottom: 8px;">
-			</a>
-			<a href="/links">
-				<img src="/side-img-2.jpg" style="width:100%">
-			</a>
-		</div>
-	</div>
+    <div class="ui fixed inverted main menu blue">
+        <center>
+            <img src="/banner-en.jpg" style="max-width: 100%; /*max-height: 100px;*/"/>
+        </center>
+        <div class="row">
+            <a class="item" href="/home">
+                Home
+            </a>
+            <a class="item" href="/about">
+                About TKJ Meeting
+            </a>
+            <a class="item" href="/callforpaper" >
+                Call for Paper
+            </a>
+            <a class="item" href="/program">
+                Program
+            </a>
+            <a class="item" href="/importantdates">
+                Important Dates
+            </a>
+            <a class="item" href="/venue">
+                Venue
+            </a>
+            <a class="item" href="/registration">
+                Registration & Hotel Reservation
+            </a>
+            <a class="item" href="/paper">
+                Abstract Submission
+            </a>
+            <a class="item" href="/links">
+                Links and Interesting Spots
+            </a>
+        </div>
+    </div>
+    <div class="ui grid centered" style="margin-top: 220px;">
+        <div class="two wide column" style="">
+            <div class="ui vertical menu blue" style="">
+                <div class="ui left pointing dropdown link item" style="background-color: #3b83c0; color: FFF">
+                    <i class="dropdown icon"></i>
+                    Abstract Submission
+                    <div class="menu">
+                        <a class="item" href="/callforpaper">Call for Paper</a>
+                        <a class="item" href="/paper">Paper Submission</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui vertical menu blue" style="background-color: #3b83c0; color: FFF">
+                <a class="item" href="/registration" style="color: FFF">
+                    Registration here
+                </a>
+            </div>
+            <div class="ui vertical menu blue" style="background-color: #3b83c0; color: FFF">
+                <a class="item" href="#" style="color: FFF">
+                    News & Update
+                </a>
+            </div>
+        </div>
+        <div class="twelve wide column">
+            <div class="ui segment">
+            {% block content %}
+            {% end %}
+            </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 33%;"><center><img src="/logo1.gif" style="min-height: 100%;"></center></td>
+                    <td style="width: 33%;"><center><img src="/logo2.png" style="min-height: 100%;"></center></td>
+                    <td style="width: 33%;"><center><img src="/logo3.jpg" style="min-height: 100%;"></center></td>
+                </tr>
+            </table>
+        </div>
+        <div class="two wide column" style="margin-left: -20px;">
+            <a href="/registration#/third">
+                <img src="/side_img_1.jpg" style="width:100%;margin-bottom: 8px;">
+            </a>
+            <a href="/links">
+                <img src="/side_img_2.jpg" style="width:100%;margin-bottom: 8px;">
+            </a>
+            <a href="http://khh.travel/en/default1.asp">
+                <img src="/side_img_3.jpg" style="width:100%">
+            </a>
+        </div>
+    </div>
 </div>
 </body>
