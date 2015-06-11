@@ -179,7 +179,7 @@ animation: "slide"
 </div-->
     <div class="ui fixed inverted main menu blue">
         <center>
-            <img src="/banner-en.jpg" style="max-width: 100%; /*max-height: 100px;*/"/>
+            <img src="/banner-en.jpg" style="max-width: 100%; max-height: 220px;"/>
         </center>
         <div class="row">
             <a class="item" href="/home">
@@ -212,8 +212,8 @@ animation: "slide"
         </div>
     </div>
     <div class="ui grid centered" style="margin-top: 220px;">
-        <div class="two wide column" style="">
-            <div class="ui vertical menu blue" style="">
+        <div class="ui two wide column" >
+            <div class="ui vertical menu blue" style="max-width: 100%;">
                 <div class="ui left pointing dropdown link item" style="background-color: #3b83c0; color: FFF">
                     <i class="dropdown icon"></i>
                     Abstract Submission
@@ -223,12 +223,12 @@ animation: "slide"
                     </div>
                 </div>
             </div>
-            <div class="ui vertical menu blue" style="background-color: #3b83c0; color: FFF">
+            <div class="ui vertical menu blue" style="background-color: #3b83c0; color: FFF; max-width:100%;">
                 <a class="item" href="/registration" style="color: FFF">
                     Registration here
                 </a>
             </div>
-            <div class="ui vertical menu blue" style="background-color: #3b83c0; color: FFF">
+            <div class="ui vertical menu blue" style="background-color: #3b83c0; color: FFF; max-width: 100%;">
                 <a class="item" href="#" style="color: FFF">
                     News & Update
                 </a>
@@ -239,12 +239,23 @@ animation: "slide"
             {% block content %}
             {% end %}
             </div>
-            <table style="width: 100%;">
+            <table>
                 <tr>
-                    <td style="width: 25%;"><center><a href="http://www.twiche.org.tw/"><img src="/logo1.gif" style="min-height: 100%;"></a></center></td>
-                    <td style="width: 25%;"><center><a href="http://www.isu.edu.tw/ipages/81202-16-15136.html"><img src="/logo2.png" style="min-height: 100%;"></a></center></td>
-                    <td style="width: 25%;"><center><a href="http://www.most.gov.tw/eng/"><img src="/logo3.jpg" style="min-height: 100%;"></a></center></td>
-                    <td style="width: 25%;"><center><a href="http://www.most.gov.tw/int/lp.asp?ctNode=1212&CtUnit=874&BaseDSD=7"><img src="/logo4.jpg" style="min-height: 100%; max-width: 100%;"></a></center></td>
+                    <td style="vertical-align: top;">
+                        <h3>Main sponsor</h3>
+                        <a href="http://www.twiche.org.tw/"><img src="/logo1.gif" style="height: 90px;"></a>
+                        <p>Taiwan Institute of Chemical Engineers</p>
+                    </td>
+                    <td> style="vertical-align: top;"
+                        <h3>Organizer</h3>
+                        <a href="http://www.isu.edu.tw/ipages/81202-16-15136.html"><img src="/logo2.png" style="height: 90px;"></a>
+                        <p>Department of Chemical Engineering I-Shou University</p>
+                    </td>
+                    <td style="vertical-align: top;">
+                        <h3>Co-sponsor</h3>
+                        <a href="http://www.most.gov.tw/int/lp.asp?ctNode=1212&CtUnit=874&BaseDSD=7"><img src="/logo4.jpg" style="height: 90px;"></a>
+                        <p>Department of International Cooperation and Science Education Ministry of Science and Technology</p>
+                    </td>
                 </tr>
             </table>
         </div>
